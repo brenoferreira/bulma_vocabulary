@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
+    "watch": "webpack --mode production --watch --progress",
     "storybook": "start-storybook -s ./dist -p 8080"
   },
   "author": "Breno Ferreira",
