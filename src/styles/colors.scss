@@ -42,26 +42,27 @@ $danger: $color-error;
 $link: $color-turquoise;
 $link-visited: $color-blue;
 
-$colors: (
-  "-tomato": $color-tomato,
-  "-turquoise": $color-turquoise,
-  "-gold": $color-gold,
-  "-orange": $color-orange,
-  "-blue": $color-blue,
-  "-forest": $color-forest,
-  "-dark-slate-gray": $color-dark-slate-gray,
-  "-tomato-brighter": $color-tomato-brighter,
-  "-gold-brighter": $color-gold-brighter,
-  "-forest-brighter": $color-forest-brighter
+$brand-colors: (
+  "tomato": $color-tomato,
+  "turquoise": $color-turquoise,
+  "gold": $color-gold,
+  "orange": $color-orange,
+  "blue": $color-blue,
+  "forest": $color-forest,
+  "dark-slate-gray": $color-dark-slate-gray,
+  "tomato-brighter": $color-tomato-brighter,
+  "gold-brighter": $color-gold-brighter,
+  "forest-brighter": $color-forest-brighter
 );
 
-@each $color-namespace, $color in $colors {
-    .has-background-#{color-namespace} {
-        background-color: $color;
+@each $color-namespace, $brand-color in $brand-colors {
+
+    .has-background-#{$color-namespace} {
+        background-color: $brand-color;
     }
 
-    .has-color-#{color-namespace} {
-        color: $color;
+    .has-color-#{$color-namespace} {
+        color: $brand-color;
     }
 }
 
