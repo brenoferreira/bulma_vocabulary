@@ -26,7 +26,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'css/mystyles.css'
+      filename: 'css/vocabulary.css'
     }),
   ]
 };
