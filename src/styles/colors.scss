@@ -42,5 +42,45 @@ $danger: $color-error;
 $link: $color-turquoise;
 $link-visited: $color-blue;
 
+.has-background-tomato {
+    background-color: $color-tomato;
+}
+
+.has-background-turquoise {
+    background-color: $color-turquoise;
+}
+
+.has-background-gold {
+    background-color: $color-gold;
+}
+
+.has-background-orange {
+    background-color: $color-orange;
+}
+
+.has-background-blue {
+    background-color: $color-blue;
+}
+
+.has-background-forest {
+    background-color: $color-forest;
+}
+
+.has-background-dark-slate-gray {
+    background-color: $color-dark-slate-gray;
+}
+
+.has-background-tomato-brighter {
+    background-color: $color-tomato-brighter;
+}
+
+.has-background-gold-brighter {
+    background-color: $color-gold-brighter;
+}
+
+.has-background-forest-brighter {
+    background-color: $color-forest-brighter;
+}
+
 @import "../../node_modules/bulma/sass/utilities/_all.sass";
 @import "../../node_modules/bulma/sass/base/_all.sass";
