@@ -42,44 +42,27 @@ $danger: $color-error;
 $link: $color-turquoise;
 $link-visited: $color-blue;
 
-.has-background-tomato {
-    background-color: $color-tomato;
-}
+$colors: (
+  "-tomato": $color-tomato,
+  "-turquoise": $color-turquoise,
+  "-gold": $color-gold,
+  "-orange": $color-orange,
+  "-blue": $color-blue,
+  "-forest": $color-forest,
+  "-dark-slate-gray": $color-dark-slate-gray,
+  "-tomato-brighter": $color-tomato-brighter,
+  "-gold-brighter": $color-gold-brighter,
+  "-forest-brighter": $color-forest-brighter
+);
 
-.has-background-turquoise {
-    background-color: $color-turquoise;
-}
+@each $color-namespace, $color in $colors {
+    .has-background-#{color-namespace} {
+        background-color: $color;
+    }
 
-.has-background-gold {
-    background-color: $color-gold;
-}
-
-.has-background-orange {
-    background-color: $color-orange;
-}
-
-.has-background-blue {
-    background-color: $color-blue;
-}
-
-.has-background-forest {
-    background-color: $color-forest;
-}
-
-.has-background-dark-slate-gray {
-    background-color: $color-dark-slate-gray;
-}
-
-.has-background-tomato-brighter {
-    background-color: $color-tomato-brighter;
-}
-
-.has-background-gold-brighter {
-    background-color: $color-gold-brighter;
-}
-
-.has-background-forest-brighter {
-    background-color: $color-forest-brighter;
+    .has-color-#{color-namespace} {
+        color: $color;
+    }
 }
 
 @import "../../node_modules/bulma/sass/utilities/_all.sass";
