@@ -1,5 +1,9 @@
 @import "../../node_modules/bulma/sass/elements/button.sass";
 
+.button {
+  text-transform: uppercase;
+}
+
 .donate {
   background-color: $color-gold;
 }
