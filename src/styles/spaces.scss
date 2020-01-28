@@ -1,9 +1,9 @@
-$smaller: .5rem;
-$small: 1rem;
-$normal: 2rem;
-$large: 3rem;
-$larger: 4rem;
-$extra-larger: 6rem;
+$space-smaller: .5rem;
+$space-small: 1rem;
+$space-normal: 2rem;
+$space-large: 3rem;
+$space-larger: 4rem;
+$space-extra-larger: 6rem;
 
 $spacing-directions: (
   "-top": "-top",
@@ -20,12 +20,12 @@ $spacing-properties: (
 );
 
 $spacing-sizes: (
-  "-smaller": $smaller,
-  "-small": $small,
-  "-normal": $normal,
-  "-large": $large,
-  "-larger": $larger,
-  "-extra-larger": $extra-larger,
+  "-smaller": $space-smaller,
+  "-small": $space-small,
+  "-normal": $space-normal,
+  "-large": $space-large,
+  "-larger": $space-larger,
+  "-extra-larger": $space-extra-larger,
   "-none": 0
 );
 
